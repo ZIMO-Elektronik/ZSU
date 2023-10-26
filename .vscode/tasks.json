@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CMake ZSUTests",
+      "type": "shell",
+      "isBackground": true,
+      "command": "cmake -Bbuild -GNinja -DCMAKE_BUILD_TYPE=Debug"
+    },
+    {
+      "label": "Ninja ZSUTests",
+      "type": "shell",
+      "isBackground": true,
+      "command": "ninja -C build ZSUTests"
+    },
+    {
+      "label": "Run ZSUTests",
+      "type": "shell",
+      "isBackground": true,
+      "command": "./build/tests/ZSUTests"
+    }
+  ]
+}
