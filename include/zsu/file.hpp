@@ -2,7 +2,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-///
+/// ZSU file
 ///
 /// \file   zsu/file.hpp
 /// \author Vincent Hamp
@@ -12,12 +12,13 @@
 
 #include <vector>
 #include "firmware.hpp"
-#include "header.hpp"
+#include "info.hpp"
 
 namespace zsu {
 
+/// ZSU file consisting of info and firmwares
 struct File {
-  Header header;
+  Info info;
   std::vector<Firmware> firmwares;
 };
 

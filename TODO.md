@@ -1,0 +1,1 @@
+- Make firmware and bootloader type an enum

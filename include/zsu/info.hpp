@@ -2,9 +2,9 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
+/// ZSU file info
 ///
-///
-/// \file   zsu/header.hpp
+/// \file   zsu/info.hpp
 /// \author Vincent Hamp
 /// \date   26/10/2023
 
@@ -14,7 +14,8 @@
 
 namespace zsu {
 
-struct Header {
+/// ZSU file info
+struct Info {
   std::string id;
   int version;
 };
