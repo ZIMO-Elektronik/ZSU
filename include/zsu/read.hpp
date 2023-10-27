@@ -17,6 +17,8 @@ namespace zsu {
 
 /// Read ZSU file
 ///
+/// Throws std::filesystem::filesystem_error on invalid paths.
+///
 /// \param  path  Path to ZSU file
 /// \return ZSU file
 File read(std::filesystem::path path);
