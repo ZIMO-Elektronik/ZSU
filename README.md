@@ -4,7 +4,7 @@
 
 <img src="data/images/logo.png" width="15%" align="right">
 
-ZSU is a German acronym for ZIMO-Sammel-Update (ZIMO-Collective-Update), a file format for firmware updates. The format supports multiple, optionally [Salsa20](https://github.com/ZIMO-Elektronik/Salsa20) encrypted, firmwares for a variety of target devices. ZSU files are currently used by the following products:
+ZSU is a German acronym for ZIMO Sammel Update (ZIMO Collective Update), a file format for firmware updates. The format supports multiple, optionally [Salsa20](https://github.com/ZIMO-Elektronik/Salsa20) encrypted, firmwares for a variety of target devices. ZSU files are currently used by the following products:
 - Command stations
   - [ZIMO MXULF](http://www.zimo.at/web2010/products/InfMXULF_EN.htm)
   - [Z21](https://www.z21.eu/en)
