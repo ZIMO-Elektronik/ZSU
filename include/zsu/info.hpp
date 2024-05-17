@@ -17,7 +17,7 @@ namespace zsu {
 /// ZSU file info
 struct Info {
   std::string id;
-  int version;
+  int version{};
 };
 
 }  // namespace zsu

@@ -2,11 +2,11 @@
 #include <zsu/zsu.hpp>
 #include "utility.hpp"
 
-TEST(zsu, throw_on_invalid_path) {
+TEST(read, read_throws_on_invalid_path) {
   EXPECT_THROW(zsu::read("invalid path"), std::filesystem::filesystem_error);
 }
 
-TEST(zsu, read_zsu_file_containing_ms_firmwares) {
+TEST(read, read_zsu_file_containing_ms_firmwares) {
   auto zsu_file{
     zsu::read(source_location_parent_path() / "../data/MS_4.235.0.zsu")};
 
@@ -24,7 +24,7 @@ TEST(zsu, read_zsu_file_containing_ms_firmwares) {
             (zsu::IV{148u, 157u, 18u, 87u, 129u, 92u, 108u, 100u}));
 }
 
-TEST(zsu, read_zsu_file_containing_mx_firmwares) {
+TEST(read, read_zsu_file_containing_mx_firmwares) {
   auto zsu_file{
     zsu::read(source_location_parent_path() / "../data/DS230503.zsu")};
 

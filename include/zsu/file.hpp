@@ -18,7 +18,7 @@ namespace zsu {
 
 /// ZSU file consisting of info and firmwares
 struct File {
-  Info info;
+  Info info{};
   std::vector<Firmware> firmwares;
 };
 
