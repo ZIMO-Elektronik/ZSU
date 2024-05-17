@@ -38,7 +38,6 @@ File read(std::filesystem::path path) {
   std::ranges::copy_n(begin(str), 2, std::back_inserter(file.info.id));
   file.info.version = str[3uz] - '0';
 
-  //
   auto firmwares{header | std::views::drop(1)};
   std::ranges::transform(
     firmwares, std::back_inserter(file.firmwares), [&](auto&& block) {

@@ -21,11 +21,11 @@ namespace zsu {
 
 /// Firmware data (and meta data)
 struct Firmware {
-  uint32_t id;                 // Decoder ID
+  uint32_t id{};               // Decoder ID
   std::string name;            // Decoder name
   std::string major_version;   // Major version
   std::string minor_version;   // Minor version
-  int type;                    // Type
+  int type{};                  // Type
   std::optional<int> bl_type;  // Optional bootloader type
   std::optional<IV> iv;        // Optional Salsa20 initialization vector
   std::vector<uint8_t> bin;    // Binary data
