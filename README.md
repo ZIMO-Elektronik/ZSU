@@ -97,7 +97,7 @@ cpmaddpackage("gh:ZIMO-Elektronik/ZSU@0.0.1")
 # or the FetchContent module
 FetchContent_Declare(
   ZSU
-  GIT_REPOSITORY https://github.com/ZIMO-Elektronik/ZSU
+  GIT_REPOSITORY "https://github.com/ZIMO-Elektronik/ZSU"
   GIT_TAG v0.0.1)
 
 target_link_libraries(YourTarget PRIVATE ZSU::ZSU)
