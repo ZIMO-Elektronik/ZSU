@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include <numeric>
 #include <zsu/zsu.hpp>
 #include "utility.hpp"
 
@@ -22,6 +23,9 @@ TEST(read, read_zsu_file_containing_ms_firmwares) {
   EXPECT_EQ(ms450_firmware.bl_type, 2);
   EXPECT_EQ(ms450_firmware.iv,
             (zsu::IV{148u, 157u, 18u, 87u, 129u, 92u, 108u, 100u}));
+  EXPECT_GT(
+    std::accumulate(cbegin(ms450_firmware.bin), cend(ms450_firmware.bin), 0u),
+    0u);
 }
 
 TEST(read, read_zsu_file_containing_mx_firmwares) {
@@ -39,4 +43,7 @@ TEST(read, read_zsu_file_containing_mx_firmwares) {
   EXPECT_EQ(mx645_firmware.type, 2);
   EXPECT_FALSE(mx645_firmware.bl_type);
   EXPECT_FALSE(mx645_firmware.iv);
+  EXPECT_GT(
+    std::accumulate(cbegin(mx645_firmware.bin), cend(mx645_firmware.bin), 0u),
+    0u);
 }

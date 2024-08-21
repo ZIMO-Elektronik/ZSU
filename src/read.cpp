@@ -98,11 +98,10 @@ File read(std::filesystem::path path) {
 
       // Bin
       if (fw.type < 3) length -= 2;
-      fw.bin.reserve(static_cast<size_t>(length));
+      fw.bin.resize(static_cast<size_t>(length));
       std::ranges::copy_n(cbegin(chunk) + start + 1,  // Legacy bug
                           length,
                           begin(fw.bin));
-      fw.bin.resize(static_cast<size_t>(length));
 
       return fw;
     });
