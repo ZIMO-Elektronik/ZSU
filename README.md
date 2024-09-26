@@ -16,14 +16,14 @@ ZSU is a German acronym for ZIMO Sammel Update (ZIMO Collective Update), a file 
   - [ZIMO accessory decoders](http://www.zimo.at/web2010/products/zubehoerdecoder_EN.htm)
 
 <details>
-  <summary>Table of contents</summary>
+  <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#file-format-specification">File format specification</a></li>
+    <li><a href="#file-format-specification">File Format Specification</a></li>
       <ul>
         <li><a href="#header">Header</a></li>
-        <li><a href="#firmware-data">Firmware data</a></li>
+        <li><a href="#firmware-data">Firmware Data</a></li>
       </ul>
-    <li><a href="#getting-started">Getting started</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -33,11 +33,11 @@ ZSU is a German acronym for ZIMO Sammel Update (ZIMO Collective Update), a file 
   </ol>
 </details>
 
-## File format specification
+## File Format Specification
 A ZSU file consists of a header and a binary blob of firmware data. The header format is essentially [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) text with a tab `\t` as a delimiter and a semicolon `;` as an EOL character. The first line contains file information, the following lines contain firmware entries. A colon `:` indicates the end of the header.
 
 ### Header
-| Tab seperated values | Encoding | Description                                                                                                        |
+| Tab Separated Values | Encoding | Description                                                                                                        |
 | -------------------- | -------- | ------------------------------------------------------------------------------------------------------------------ |
 | DF                   | ASCII    | ZSU file identifier                                                                                                |
 | 1                    | ASCII    | Header version                                                                                                     |
@@ -53,10 +53,10 @@ A ZSU file consists of a header and a binary blob of firmware data. The header f
 | 9465695272716466818  | ASCII    | 8 byte encryption IV as decimal ASCII **(optional)**                                                               |
 | :                    | ASCII    | Header end identifier                                                                                              |
 
-### Firmware data
+### Firmware Data
 Binary, optionally encrypted, firmware data.
 
-| Value or example | Encoding | Description   |
+| Value or Example | Encoding | Description   |
 | ---------------- | -------- | ------------- |
 | 0x00             | Binary   | Firmware data |
 | ...              | Binary   | ...           |
@@ -82,7 +82,7 @@ DF	1;
 184549633	6489791	147648	MS001-1_4	4	235	3	2	1389861890318814935:
 ```
 
-## Getting started
+## Getting Started
 ### Prerequisites
 - C++23 compatible compiler
 - [CMake](https://cmake.org/) ( >= 3.25 )
