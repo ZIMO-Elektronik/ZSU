@@ -3,7 +3,7 @@
 #include <zsu/zsu.hpp>
 
 int main() {
-  auto zsu_file{zsu::read("./data/MS_4.235.0.zsu")};
+  auto zsu_file{zsu::read("./data/MS-5.3.1.zsu")};
 
   // Print file format version
   std::cout << "ZSU file version " << zsu_file.info.version << "\n";

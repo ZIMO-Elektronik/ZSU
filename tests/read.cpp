@@ -9,7 +9,7 @@ TEST(read, read_throws_on_invalid_path) {
 
 TEST(read, read_zsu_file_containing_ms_firmwares) {
   auto zsu_file{
-    zsu::read(source_location_parent_path() / "../data/MS_4.235.0.zsu")};
+    zsu::read(source_location_parent_path() / "../data/MS-4.235.0.zsu")};
 
   EXPECT_EQ(zsu_file.info.id, "DF");
   EXPECT_EQ(zsu_file.info.version, 1);
