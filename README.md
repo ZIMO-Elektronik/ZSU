@@ -42,7 +42,7 @@ A ZSU file consists of a header and a binary blob of firmware data. The header f
 | DF                   | ASCII    | ZSU file identifier                                                                                                |
 | 1                    | ASCII    | Header version                                                                                                     |
 | ;                    | ASCII    | Firmware info start identifier                                                                                     |
-| 100938240            | ASCII    | 4 byte device ID as decimal ASCII<br/>(example: 0x06043200 for MS450-0)                                            |
+| 100938240            | ASCII    | 1 or 4 byte device ID as decimal ASCII<br/>(example: 0x06043200 for MS450-0)                                       |
 | 159                  | ASCII    | Offset to firmware data in file<br/>(-1 due to "legacy bug", the actual start address would be A0 in this example) |
 | 145792               | ASCII    | Length of firmware data in file                                                                                    |
 | MS-450               | ASCII    | Device name                                                                                                        |
