@@ -72,7 +72,7 @@ DF	1;
 165	3172876	52226	DU65	40	20	2:
 ```
 
-Example of latest [MS decoder ZSU file](./data/MS-5.3.1.zsu)
+Example of latest [MS decoder ZSU file](./data/MS-4.235.0.zsu)
 ```sh
 DF	1;
 2081506816	3135	117696	MN170-0_4	4	235	3	2	10367926798890783065;
@@ -92,13 +92,13 @@ This library is meant to be consumed with CMake.
 
 ```cmake
 # Either by including it with CPM
-cpmaddpackage("gh:ZIMO-Elektronik/ZSU@0.1.0")
+cpmaddpackage("gh:ZIMO-Elektronik/ZSU@0.1.1")
 
 # or the FetchContent module
 FetchContent_Declare(
   ZSU
   GIT_REPOSITORY "https://github.com/ZIMO-Elektronik/ZSU"
-  GIT_TAG v0.1.0)
+  GIT_TAG v0.1.1)
 
 target_link_libraries(YourTarget PRIVATE ZSU::ZSU)
 ```
