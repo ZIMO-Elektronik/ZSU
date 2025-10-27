@@ -22,4 +22,4 @@ struct File {
   std::vector<Firmware> firmwares;
 };
 
-}  // namespace zsu
+} // namespace zsu

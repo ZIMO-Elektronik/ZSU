@@ -23,4 +23,4 @@ namespace zsu {
 /// \return ZSU file
 File read(std::filesystem::path path);
 
-}  // namespace zsu
+} // namespace zsu

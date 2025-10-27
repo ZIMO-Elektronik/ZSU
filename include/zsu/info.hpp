@@ -20,4 +20,4 @@ struct Info {
   int version{};
 };
 
-}  // namespace zsu
+} // namespace zsu

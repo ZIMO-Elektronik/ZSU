@@ -4,7 +4,7 @@ include(FetchContent)
 FetchContent_Declare(
   CMakeModules
   GIT_REPOSITORY "https://github.com/ZIMO-Elektronik/CMakeModules"
-  GIT_TAG v0.9.5
+  GIT_TAG v0.10.0
   SOURCE_DIR ${CMAKE_BINARY_DIR}/CMakeModules)
 FetchContent_MakeAvailable(CMakeModules)
 
@@ -25,14 +25,14 @@ if(PROJECT_IS_TOP_LEVEL)
     ZSU
     INTERFACE include
     PRIVATE include/zsu)
+  target_common_warnings(ZSU PRIVATE)
+  target_common_errors(ZSU PRIVATE)
 else()
   target_include_directories(
     ZSU SYSTEM
     INTERFACE include
     PRIVATE include/zsu)
 endif()
-
-target_common_warnings(ZSU PRIVATE)
 
 if(PROJECT_IS_TOP_LEVEL)
   include(CTest)

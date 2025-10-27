@@ -18,4 +18,4 @@ namespace zsu {
 /// Salsa20 initialization vector
 using IV = std::array<uint8_t, 8uz>;
 
-}  // namespace zsu
+} // namespace zsu

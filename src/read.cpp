@@ -99,7 +99,7 @@ File read(std::filesystem::path path) {
       // Bin
       if (fw.type < 3) length -= 2;
       fw.bin.resize(static_cast<size_t>(length));
-      std::ranges::copy_n(cbegin(chunk) + start + 1,  // Legacy bug
+      std::ranges::copy_n(cbegin(chunk) + start + 1, // Legacy bug
                           length,
                           begin(fw.bin));
 
@@ -109,4 +109,4 @@ File read(std::filesystem::path path) {
   return file;
 }
 
-}  // namespace zsu
+} // namespace zsu
