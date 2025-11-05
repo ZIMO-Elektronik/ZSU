@@ -6,12 +6,13 @@
 
 ZSU is a German acronym for ZIMO Sammel Update (ZIMO Collective Update), a file format for firmware updates. The format supports multiple, optionally [Salsa20](https://github.com/ZIMO-Elektronik/Salsa20) encrypted, firmwares for a variety of target devices. ZSU files are currently used by the following products:
 - Command stations
+  - [ZIMO KLUG](https://www.zimo.at/web2010/products/KLUG-Kompaktes_Lade_und_Update-Geraet_EN.htm)
   - [ZIMO MXULF](http://www.zimo.at/web2010/products/InfMXULF_EN.htm)
-  - [Z21](https://www.z21.eu/en)
+  - [ROCO Z21](https://www.z21.eu/en)
 - Decoders
-  - [ZIMO MN decoders](http://www.zimo.at/web2010/products/mn-nicht-sound-decoder_EN.htm)
-  - [ZIMO small-](http://www.zimo.at/web2010/products/ms-sound-decoder_EN.htm) and [large-scale MS decoders](http://www.zimo.at/web2010/products/ms-sound-decoder-grossbahn_EN.htm)
-  - [ZIMO MX function decoders](http://www.zimo.at/web2010/products/funktionsdecoder_EN.htm)
+  - [ZIMO small-](https://www.zimo.at/web2010/products/ms-sound-decoder_EN.htm) and [large-scale MS decoders](https://www.zimo.at/web2010/products/ms-sound-decoder-grossbahn_EN.htm)
+  - [ZIMO MN decoders](https://www.zimo.at/web2010/products/mn-nicht-sound-decoder_EN.htm)
+  - [ZIMO FS decoders](https://www.zimo.at/web2010/products/funktionsdecoder_EN.htm)
   - [ZIMO small-](http://www.zimo.at/web2010/products/lokdecoder_EN.htm) and [large-scale MX decoders](http://www.zimo.at/web2010/products/lokdecodergrosse_EN.htm)
   - [ZIMO accessory decoders](http://www.zimo.at/web2010/products/zubehoerdecoder_EN.htm)
 
