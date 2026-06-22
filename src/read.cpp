@@ -96,6 +96,10 @@ File read(std::filesystem::path path) {
                  static_cast<uint8_t>(iv >> 0u)};
       }
 
+      // Patch version
+      if (first != last)
+        std::ranges::copy(*first++, std::back_inserter(fw.patch_version));
+
       // Bin
       if (fw.type < 3) length -= 2;
       fw.bin.resize(static_cast<size_t>(length));

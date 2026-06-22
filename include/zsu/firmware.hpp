@@ -25,6 +25,7 @@ struct Firmware {
   std::string name;           // Decoder name
   std::string major_version;  // Major version
   std::string minor_version;  // Minor version
+  std::string patch_version;  // Patch version
   int type{};                 // Type
   std::optional<int> bl_type; // Optional bootloader type
   std::optional<IV> iv;       // Optional Salsa20 initialization vector
