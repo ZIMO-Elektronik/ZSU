@@ -47,11 +47,12 @@ A ZSU file consists of a header and a binary blob of firmware data. The header f
 | 159                  | ASCII    | Offset to firmware data in file<br/>(-1 due to "legacy bug", the actual start address would be A0 in this example) |
 | 145792               | ASCII    | Length of firmware data in file                                                                                    |
 | MS-450               | ASCII    | Device name                                                                                                        |
-| 1                    | ASCII    | Version                                                                                                            |
-| 17                   | ASCII    | Subversion                                                                                                         |
+| 1                    | ASCII    | Major version                                                                                                      |
+| 17                   | ASCII    | Minor version                                                                                                      |
 | 3                    | ASCII    | Microcontroller<br/>1 = PIC16<br/>2 = PIC18<br/>3 = STM32                                                          |
 | 2                    | ASCII    | Bootloader type **(optional)**<br/>1 = MX82x family<br/>2 =  STM                                                   |
 | 9465695272716466818  | ASCII    | 8 byte encryption IV as decimal ASCII **(optional)**                                                               |
+| 9                    | ASCII    | Patch version **(optional)**                                                                                       |
 | :                    | ASCII    | Header end identifier                                                                                              |
 
 ### Firmware Data
